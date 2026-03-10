@@ -446,16 +446,19 @@
 
 
 
-/* Hero section: stack image + text vertically on mobile */
+/* Hero section: centered layout on all screens */
 @media (max-width: 991px) {
     .home_banner_area .banner_inner .banner_content .media {
-        flex-direction: column !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center !important;
         align-items: center !important;
     }
     .home_banner_area .banner_inner .banner_content .media .d-flex {
         width: 100% !important;
-        max-width: 320px !important;
-        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
     }
     .home_banner_area .banner_inner .banner_content .media .d-flex > div {
         width: 220px !important;
