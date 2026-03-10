@@ -106,7 +106,7 @@
             <div class="container box_1620">
                 <div class="banner_inner d-flex align-items-center justify-content-center">
                     <div class="banner_content" style="width:100%;">
-                        <div class="media" style="align-items:center; justify-content:center;">
+                        <div class="media" style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:50px; flex-wrap:wrap;">
                             <div class="d-flex">
                                 <div style="width:320px; height:320px; border-radius:50%; overflow:hidden; border:5px solid rgba(255,255,255,0.4); flex-shrink:0;">
                                     <img src="img/personal.jpg" alt="Panchami Satheesan"
@@ -139,9 +139,11 @@
         </section>
         <style>
             @media (max-width: 768px) {
-                .home_banner_area .banner_inner .banner_content .media { flex-direction: column; }
-                .home_banner_area .banner_inner .banner_content .media .d-flex img { width:220px !important; height:220px !important; border-radius:50% !important; }
-                .home_banner_area .banner_inner .banner_content .media .media-body { padding-left:0 !important; margin-top:24px; }
+                .home_banner_area .banner_inner .banner_content .media { flex-direction: row !important; flex-wrap: wrap; justify-content: center !important; text-align: center; }
+                .home_banner_area .banner_inner .banner_content .media .d-flex { display: flex; justify-content: center; width: 100%; }
+                .home_banner_area .banner_inner .banner_content .media .d-flex > div { width: 200px !important; height: 200px !important; }
+                .home_banner_area .banner_inner .banner_content .media .media-body { padding-left: 0 !important; margin-top: 24px; width: 100%; text-align: center; }
+                .personal_text .basic_info, .personal_text .personal_social { justify-content: center; }
             }
         </style>
 
