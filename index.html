@@ -18,7 +18,10 @@
         <link rel="stylesheet" href="css/responsive.css">
         <style>
             .skill_badge { display:inline-block; background:#f0f4ff; border:1px solid #c5d0ff; color:#3a4ca8; padding:4px 12px; border-radius:20px; font-size:13px; margin:4px 3px; font-weight:500; }
-            .project_card { background:#fff; border:1px solid #e8eaf6; border-radius:10px; padding:28px; margin-bottom:24px; transition:all 0.3s; border-top:4px solid #6c63ff; }
+            .project_card { background:#fff; border:1px solid #e8eaf6; border-radius:10px; padding:28px; margin-bottom:24px; transition:all 0.3s; border-top:4px solid #6c63ff; display:flex; flex-direction:column; height:100%; }
+            .project_card ul { padding-left:18px; margin-top:10px; flex:1; }
+            #projects .row { display:flex; flex-wrap:wrap; }
+            #projects .row > [class*="col-"] { display:flex; flex-direction:column; }
             .project_card:hover { box-shadow:0 8px 30px rgba(108,99,255,0.12); transform:translateY(-4px); }
             .project_card h4 { color:#2c2c54; font-weight:700; margin-bottom:6px; }
             .project_card .proj_type { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#6c63ff; font-weight:600; margin-bottom:10px; }
@@ -31,18 +34,38 @@
             .contact_info_item i { font-size:20px; color:#6c63ff; width:24px; }
             .contact_info_item span { color:#444; font-size:15px; }
 
-            /* Fix tab timeline alignment */
+            @media (max-width: 991px) {
+                .hero-photo { width: 100% !important; height: auto !important; max-height: 300px !important; }
+            }
             /* Navbar white text on gradient */
             .header_area { background: transparent !important; position: absolute !important; width: 100%; z-index: 999; }
             .main_menu .navbar { background: transparent !important; }
             .nav navbar-nav .nav-link, .menu_nav li a { color: #fff !important; }
             .navbar-brand span { color: #fff !important; }
             .navbar-toggler .icon-bar { background: #fff !important; }
+
+            /* Mobile nav fix */
+            @media (max-width: 991px) {
+                .header_area {
+                    position: relative !important;
+                    background: linear-gradient(135deg, #766dff 0%, #88f3ff 100%) !important;
+                }
+                .home_banner_area {
+                    padding-top: 0 !important;
+                    margin-top: 0 !important;
+                }
+                .header_area .navbar .nav .nav-item .nav-link {
+                    color: #fff !important;
+                }
+                .navbar-collapse {
+                    background: transparent !important;
+                }
+            }
             .tabs_inner .tab-content .tab-pane .list { max-width:100% !important; }
             .tabs_inner .tab-content .tab-pane .list:before { left:200px !important; }
             .tabs_inner .tab-content .tab-pane .list li span { left:200px !important; }
             .tabs_inner .tab-content .tab-pane .list li .media { display:flex !important; align-items:flex-start !important; }
-            .tabs_inner .tab-content .tab-pane .list li .media .d-flex { min-width:200px !important; width:200px !important; padding-right:40px !important; flex-shrink:0 !important; text-align:right; }
+            .tabs_inner .tab-content .tab-pane .list li .media .d-flex { min-width:200px; width:200px; padding-right:40px !important; flex-shrink:0 !important; text-align:right; }
             .tabs_inner .tab-content .tab-pane .list li .media .media-body { padding-left:40px !important; flex:1 !important; min-width:0 !important; }
             .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 { font-size:18px !important; word-break:normal !important; white-space:normal !important; overflow-wrap:break-word; }
         </style>
@@ -83,7 +106,7 @@
                         <div class="media">
                             <div class="d-flex">
                                 <img src="img/personal.jpg" alt="Panchami Satheesan"
-                                     style="width:340px; height:480px; object-fit:cover; object-position:center top; border-radius:8px; display:block;">
+                                     style="width:340px; max-width:100%; height:480px; object-fit:cover; object-position:center top; border-radius:8px; display:block;" class="hero-photo">
                             </div>
                             <div class="media-body" style="padding-left:50px;">
                                 <div class="personal_text">
@@ -132,7 +155,7 @@
                                     <div class="wel_item">
                                         <i class="lnr lnr-code"></i>
                                         <h4>6</h4>
-                                        <p>GitHub Projects</p>
+                                        <p>GitHub Repos</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -267,6 +290,7 @@
                                 <li>Preprocessed unstructured documents for efficient similarity-based retrieval</li>
                             </ul>
                             <div style="margin-top:14px;"><span class="skill_badge">HuggingFace</span><span class="skill_badge">FAISS</span><span class="skill_badge">RAG</span><span class="skill_badge">Python</span></div>
+                            <a href="https://github.com/PanchamiShiv/UniCourse-Explorer" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -294,11 +318,12 @@
                                 <li>Integrated OpenAI GPT APIs for automated email summaries and insights</li>
                             </ul>
                             <div style="margin-top:14px;"><span class="skill_badge">Streamlit</span><span class="skill_badge">OpenAI API</span><span class="skill_badge">Scikit-learn</span><span class="skill_badge">Pandas</span></div>
+                            <a href="https://github.com/PanchamiShiv/inbox-intel" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="project_card" style="border-top-color:#0078d4;">
-                            <div class="proj_type" style="color:#0078d4;">☁️ Cloud · Data Engineering · ETL</div>
+                        <div class="project_card" >
+                            <div class="proj_type" >☁️ Cloud · Data Engineering · ETL</div>
                             <h4>Azure Retail ETL Pipeline</h4>
                             <p>Production-style ETL pipeline ingesting Superstore retail data into Azure SQL Database with a full dimensional model.</p>
                             <ul>
@@ -307,12 +332,12 @@
                                 <li>Implemented pipeline execution logging and data validation across all stages</li>
                             </ul>
                             <div style="margin-top:14px;"><span class="skill_badge">Python</span><span class="skill_badge">Azure SQL</span><span class="skill_badge">pyodbc</span><span class="skill_badge">ETL</span></div>
-                            <a href="https://github.com/PanchamiShiv/azure-retail-etl" target="_blank" class="gh_link" style="color:#0078d4;"><i class="fa fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/PanchamiShiv/azure-retail-etl" target="_blank" class="gh_link" ><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="project_card" style="border-top-color:#0078d4;">
-                            <div class="proj_type" style="color:#0078d4;">☁️ Big Data · Medallion Architecture</div>
+                        <div class="project_card" >
+                            <div class="proj_type" >☁️ Big Data · Medallion Architecture</div>
                             <h4>Azure Population Pipeline</h4>
                             <p>Scalable Medallion Architecture pipeline processing Top 100 World's Largest Cities dataset across Bronze, Silver, and Gold layers.</p>
                             <ul>
@@ -321,7 +346,21 @@
                                 <li>Gold: Aggregated to Top 10 most populated cities — analytics-ready output</li>
                             </ul>
                             <div style="margin-top:14px;"><span class="skill_badge">Azure Databricks</span><span class="skill_badge">PySpark</span><span class="skill_badge">ADLS Gen2</span><span class="skill_badge">Jupyter</span></div>
-                            <a href="https://github.com/PanchamiShiv/azure-population-pipeline" target="_blank" class="gh_link" style="color:#0078d4;"><i class="fa fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/PanchamiShiv/azure-population-pipeline" target="_blank" class="gh_link" ><i class="fa fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_card">
+                            <div class="proj_type">🎮 Android · Mobile Game · Sensors</div>
+                            <h4>Falling Targets – Sensor-Based Android Game</h4>
+                            <p>An arcade-style Android shooting game where players control a cannon to destroy falling targets, powered by three mobile sensors for immersive gameplay.</p>
+                            <ul>
+                                <li>Accelerometer-controlled cannon movement — tilt phone left/right to aim</li>
+                                <li>Gyroscope-triggered special move to clear all targets at once</li>
+                                <li>Proximity sensor auto-pause, combo scoring, haptic feedback &amp; persistent high scores</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">Java</span><span class="skill_badge">Android Studio</span><span class="skill_badge">Accelerometer</span><span class="skill_badge">Gyroscope</span><span class="skill_badge">SoundPool</span></div>
+                            <a href="https://github.com/PanchamiShiv/falling-targets-game" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -402,5 +441,29 @@
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
+
+        <!-- FINAL MOBILE NAV FIX - must load last to override all other styles -->
+        <style>
+            @media (max-width: 991px) {
+                .header_area {
+                    position: relative !important;
+                    background: linear-gradient(135deg, #766dff 0%, #88f3ff 100%) !important;
+                    width: 100% !important;
+                }
+                .home_banner_area {
+                    padding-top: 0 !important;
+                    margin-top: 0 !important;
+                }
+                .header_area .navbar .nav .nav-item .nav-link {
+                    color: #fff !important;
+                }
+                .navbar-collapse {
+                    background: transparent !important;
+                }
+                .navbar-brand span {
+                    color: #fff !important;
+                }
+            }
+        </style>
     </body>
 </html>
