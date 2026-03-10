@@ -104,9 +104,9 @@
         <!--================Hero Banner =================-->
         <section class="home_banner_area" id="home">
             <div class="container box_1620">
-                <div class="banner_inner d-flex align-items-center">
-                    <div class="banner_content">
-                        <div class="media">
+                <div class="banner_inner d-flex align-items-center justify-content-center">
+                    <div class="banner_content" style="width:100%;">
+                        <div class="media" style="align-items:center; justify-content:center;">
                             <div class="d-flex">
                                 <div style="width:320px; height:320px; border-radius:50%; overflow:hidden; border:5px solid rgba(255,255,255,0.4); flex-shrink:0;">
                                     <img src="img/personal.jpg" alt="Panchami Satheesan"
@@ -323,7 +323,7 @@
                                 <li>Integrated OpenAI GPT APIs for automated email summaries and insights</li>
                             </ul>
                             <div style="margin-top:14px;"><span class="skill_badge">Streamlit</span><span class="skill_badge">OpenAI API</span><span class="skill_badge">Scikit-learn</span><span class="skill_badge">Pandas</span></div>
-                            <a href="https://github.com/PanchamiShiv/enron-email-explorer" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/PanchamiShiv/inbox-intel" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -449,6 +449,9 @@
 
         <!-- FINAL MOBILE NAV FIX - must load last to override all other styles -->
         <style>
+            /* Center hero content */
+            .home_banner_area .banner_inner { justify-content: center !important; }
+            .home_banner_area .banner_content { max-width: 1000px; margin: 0 auto; }
             /* Progress bar fix - fill based on aria-valuenow */
             .skill_main .progress { background:#e8eaf6; border-radius:10px; height:8px; overflow:visible; }
             .skill_main .progress-bar { background: linear-gradient(90deg, #6c63ff, #88f3ff); border-radius:10px; height:100%; transition: width 1.2s ease-in-out; }
