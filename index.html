@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Panchami Satheesan | Aspiring Software Engineer</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <style>
+            .skill_badge { display:inline-block; background:#f0f4ff; border:1px solid #c5d0ff; color:#3a4ca8; padding:4px 12px; border-radius:20px; font-size:13px; margin:4px 3px; font-weight:500; }
+            .project_card { background:#fff; border:1px solid #e8eaf6; border-radius:10px; padding:28px; margin-bottom:24px; transition:all 0.3s; border-top:4px solid #6c63ff; }
+            .project_card:hover { box-shadow:0 8px 30px rgba(108,99,255,0.12); transform:translateY(-4px); }
+            .project_card h4 { color:#2c2c54; font-weight:700; margin-bottom:6px; }
+            .project_card .proj_type { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#6c63ff; font-weight:600; margin-bottom:10px; }
+            .project_card p { color:#666; font-size:14px; line-height:1.7; }
+            .project_card ul { padding-left:18px; margin-top:10px; }
+            .project_card ul li { color:#555; font-size:13.5px; line-height:1.8; margin-bottom:3px; }
+            .project_card .gh_link { display:inline-block; margin-top:12px; color:#6c63ff; font-size:13px; font-weight:600; text-decoration:none; }
+            .project_card .gh_link:hover { text-decoration:underline; }
+            .contact_info_item { display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+            .contact_info_item i { font-size:20px; color:#6c63ff; width:24px; }
+            .contact_info_item span { color:#444; font-size:15px; }
+
+            /* Fix tab timeline alignment */
+            /* Navbar white text on gradient */
+            .header_area { background: transparent !important; position: absolute !important; width: 100%; z-index: 999; }
+            .main_menu .navbar { background: transparent !important; }
+            .nav navbar-nav .nav-link, .menu_nav li a { color: #fff !important; }
+            .navbar-brand span { color: #fff !important; }
+            .navbar-toggler .icon-bar { background: #fff !important; }
+            .tabs_inner .tab-content .tab-pane .list { max-width:100% !important; }
+            .tabs_inner .tab-content .tab-pane .list:before { left:200px !important; }
+            .tabs_inner .tab-content .tab-pane .list li span { left:200px !important; }
+            .tabs_inner .tab-content .tab-pane .list li .media { display:flex !important; align-items:flex-start !important; }
+            .tabs_inner .tab-content .tab-pane .list li .media .d-flex { min-width:200px !important; width:200px !important; padding-right:40px !important; flex-shrink:0 !important; text-align:right; }
+            .tabs_inner .tab-content .tab-pane .list li .media .media-body { padding-left:40px !important; flex:1 !important; min-width:0 !important; }
+            .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 { font-size:18px !important; word-break:normal !important; white-space:normal !important; overflow-wrap:break-word; }
+        </style>
+    </head>
+    <body>
+
+        <!--================Header =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container box_1620">
+                        <a class="navbar-brand logo_h" href="index.html">
+                            <span style="font-size:22px;font-weight:800;color:#6c63ff;letter-spacing:-1px;">PS</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--================Hero Banner =================-->
+        <section class="home_banner_area" id="home">
+            <div class="container box_1620">
+                <div class="banner_inner d-flex align-items-center">
+                    <div class="banner_content">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/personal.jpg" alt="Panchami Satheesan"
+                                     style="width:340px; height:480px; object-fit:cover; object-position:center top; border-radius:8px; display:block;">
+                            </div>
+                            <div class="media-body" style="padding-left:50px;">
+                                <div class="personal_text">
+                                    <h6>Hello Everybody, I am</h6>
+                                    <h3>Panchami Satheesan</h3>
+                                    <h4>Aspiring Software Engineer &amp; AI/ML Enthusiast</h4>
+                                    <p>M.Sc. Applied Computer Science student building intelligent systems with LLM pipelines, cloud data engineering &amp; edge AI. Open to software engineering &amp; AI/ML roles.</p>
+                                    <ul class="list basic_info">
+                                        <li><a href="tel:+4917620089156"><i class="lnr lnr-phone-handset"></i> +49 176 200 89 156</a></li>
+                                        <li><a href="mailto:panchshiv1910@gmail.com"><i class="lnr lnr-envelope"></i> panchshiv1910@gmail.com</a></li>
+                                        <li><a href="https://linkedin.com/in/panchami-shiv" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/panchami-shiv</a></li>
+                                        <li><a href="#"><i class="lnr lnr-home"></i> Berlin, Germany</a></li>
+                                    </ul>
+                                    <ul class="list personal_social">
+                                        <li><a href="https://linkedin.com/in/panchami-shiv" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/PanchamiShiv" target="_blank"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="mailto:panchshiv1910@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            @media (max-width: 768px) {
+                .home_banner_area .banner_inner .banner_content .media { flex-direction: column; }
+                .home_banner_area .banner_inner .banner_content .media .d-flex img { width:100% !important; height:260px !important; }
+                .home_banner_area .banner_inner .banner_content .media .media-body { padding-left:0 !important; margin-top:24px; }
+            }
+        </style>
+
+        <!--================About + Skills =================-->
+        <section class="welcome_area p_120" id="about">
+            <div class="container">
+                <div class="row welcome_inner">
+                    <div class="col-lg-6">
+                        <div class="welcome_text">
+                            <h4>About Myself</h4>
+                            <p>I'm an M.Sc. Applied Computer Science student at Hochschule Schmalkalden, Germany, passionate about building AI-powered systems and data-driven applications. My expertise spans LLM pipelines, RAG systems, Azure cloud data engineering, and edge AI on Raspberry Pi.</p>
+                            <p style="margin-top:12px;">I have hands-on experience with Python, HuggingFace, FAISS, PySpark, Azure Databricks, and Streamlit, plus software development internship experience building full-stack apps with React and ASP.NET.</p>
+                            <p style="margin-top:12px;color:#888;font-size:13px;">🌍 English (Proficient) &nbsp;|&nbsp; 🇩🇪 German (Intermediate)</p>
+                            <div class="row" style="margin-top:24px;">
+                                <div class="col-md-4">
+                                    <div class="wel_item">
+                                        <i class="lnr lnr-code"></i>
+                                        <h4>6</h4>
+                                        <p>GitHub Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wel_item">
+                                        <i class="lnr lnr-graduation-hat"></i>
+                                        <h4>1.8</h4>
+                                        <p>M.Sc. GPA</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wel_item">
+                                        <i class="lnr lnr-briefcase"></i>
+                                        <h4>5+</h4>
+                                        <p>Months Exp.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="skills">
+                        <div class="tools_expert">
+                            <h4 style="margin-bottom:16px;color:#2c2c54;font-weight:700;">Skills &amp; Technologies</h4>
+                            <div class="skill_main">
+                                <div class="skill_item">
+                                    <h4>Python / SQL <span class="counter">90</span>%</h4>
+                                    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                                </div>
+                                <div class="skill_item">
+                                    <h4>AI / ML (HuggingFace, FAISS, RAG) <span class="counter">82</span>%</h4>
+                                    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                                </div>
+                                <div class="skill_item">
+                                    <h4>Azure Cloud / PySpark <span class="counter">78</span>%</h4>
+                                    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                                </div>
+                                <div class="skill_item">
+                                    <h4>Django / Flask / Streamlit <span class="counter">80</span>%</h4>
+                                    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                                </div>
+                                <div class="skill_item">
+                                    <h4>React / Angular / ASP.NET <span class="counter">75</span>%</h4>
+                                    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                                </div>
+                            </div>
+                            <div style="margin-top:20px;">
+                                <span class="skill_badge">Python</span><span class="skill_badge">SQL</span><span class="skill_badge">Java</span><span class="skill_badge">C#</span>
+                                <span class="skill_badge">HuggingFace</span><span class="skill_badge">FAISS</span><span class="skill_badge">RAG</span><span class="skill_badge">Scikit-learn</span>
+                                <span class="skill_badge">Azure Databricks</span><span class="skill_badge">ADLS Gen2</span><span class="skill_badge">PySpark</span>
+                                <span class="skill_badge">Django</span><span class="skill_badge">Flask</span><span class="skill_badge">Streamlit</span>
+                                <span class="skill_badge">React</span><span class="skill_badge">Angular</span><span class="skill_badge">Git</span><span class="skill_badge">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================Experience & Education Tabs =================-->
+        <section class="mytabs_area p_120" id="experience">
+            <div class="container">
+                <div class="tabs_inner">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="exp-tab" data-toggle="tab" href="#exp" role="tab">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" id="edu-tab" data-toggle="tab" href="#edu" role="tab">Education</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="exp" role="tabpanel">
+                            <ul class="list">
+                                <li>
+                                    <span></span>
+                                    <div class="media">
+                                        <div class="d-flex"><p>Nov 2023 – Mar 2024</p></div>
+                                        <div class="media-body">
+                                            <h4>Software Developer Intern</h4>
+                                            <p>Fingent Global Solutions &nbsp;·&nbsp; Kochi, India</p>
+                                            <ul style="margin-top:10px;padding-left:18px;">
+                                                <li style="font-size:14px;color:#555;margin-bottom:5px;">Built responsive web interfaces using HTML, CSS, JavaScript, React, and Angular.</li>
+                                                <li style="font-size:14px;color:#555;margin-bottom:5px;">Developed full-stack applications with React/Angular frontend and ASP.NET MVC/Core backend.</li>
+                                                <li style="font-size:14px;color:#555;margin-bottom:5px;">Designed a Recruitment Hub job portal with role-based access control (users, admins, recruiters).</li>
+                                                <li style="font-size:14px;color:#555;margin-bottom:5px;">Collaborated in Agile environment using Git-based version control and code reviews.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="edu" role="tabpanel">
+                            <ul class="list">
+                                <li>
+                                    <span></span>
+                                    <div class="media">
+                                        <div class="d-flex"><p>2024 – Present</p></div>
+                                        <div class="media-body">
+                                            <h4>M.Sc. Applied Computer Science</h4>
+                                            <p>Hochschule Schmalkalden &nbsp;·&nbsp; Germany &nbsp;·&nbsp; GPA: 1.8</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div class="media">
+                                        <div class="d-flex"><p>2019 – 2023</p></div>
+                                        <div class="media-body">
+                                            <h4>B.Tech Computer Science</h4>
+                                            <p>College of Engineering Kidangoor &nbsp;·&nbsp; India &nbsp;·&nbsp; GPA: 1.45</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================Projects =================-->
+        <section class="feature_area p_120" id="projects" style="background:#f8f9ff;">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Featured Projects</h2>
+                    <p>A selection of AI, cloud, and software engineering projects from my GitHub.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="project_card">
+                            <div class="proj_type">🤖 LLM · Information Retrieval</div>
+                            <h4>UniCourse Explorer</h4>
+                            <p>End-to-end RAG pipeline for semantic search over unstructured course documents, evaluated against ground-truth benchmarks.</p>
+                            <ul>
+                                <li>Built semantic search using HuggingFace Sentence Transformers + FAISS vector indexing</li>
+                                <li>Evaluated full RAG pipeline quality with ground-truth benchmark comparisons</li>
+                                <li>Preprocessed unstructured documents for efficient similarity-based retrieval</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">HuggingFace</span><span class="skill_badge">FAISS</span><span class="skill_badge">RAG</span><span class="skill_badge">Python</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_card">
+                            <div class="proj_type">🎙️ Edge AI · Agentic Pipeline</div>
+                            <h4>AI Voice Assistant</h4>
+                            <p>Multi-stage agentic LLM pipeline on Raspberry Pi integrating speech-to-text, NLP, GPT responses, and audio output.</p>
+                            <ul>
+                                <li>Integrated SpeechRecognition, OpenAI GPT API, and Flask on Raspberry Pi</li>
+                                <li>Engineered prompt templates to control GPT response tone, format, and length</li>
+                                <li>Optimized latency by profiling API calls and audio generation bottlenecks</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">Raspberry Pi</span><span class="skill_badge">OpenAI API</span><span class="skill_badge">Flask</span><span class="skill_badge">Python</span></div>
+                            <a href="https://github.com/PanchamiShiv/ai_voice-assistant-raspberrypi" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_card">
+                            <div class="proj_type">📊 ML Analytics · Data Platform</div>
+                            <h4>Inbox Intel</h4>
+                            <p>End-to-end ML analytics platform on the Enron email dataset with clustering, anomaly detection, and interactive dashboards.</p>
+                            <ul>
+                                <li>Applied clustering &amp; anomaly detection to identify communication patterns</li>
+                                <li>Built interactive Streamlit dashboards for non-technical stakeholders</li>
+                                <li>Integrated OpenAI GPT APIs for automated email summaries and insights</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">Streamlit</span><span class="skill_badge">OpenAI API</span><span class="skill_badge">Scikit-learn</span><span class="skill_badge">Pandas</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_card" style="border-top-color:#0078d4;">
+                            <div class="proj_type" style="color:#0078d4;">☁️ Cloud · Data Engineering · ETL</div>
+                            <h4>Azure Retail ETL Pipeline</h4>
+                            <p>Production-style ETL pipeline ingesting Superstore retail data into Azure SQL Database with a full dimensional model.</p>
+                            <ul>
+                                <li>Designed full Python ETL pipeline connecting to Azure SQL Database via pyodbc</li>
+                                <li>Built dimensional schema with fact &amp; dimension tables (products, customers, orders)</li>
+                                <li>Implemented pipeline execution logging and data validation across all stages</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">Python</span><span class="skill_badge">Azure SQL</span><span class="skill_badge">pyodbc</span><span class="skill_badge">ETL</span></div>
+                            <a href="https://github.com/PanchamiShiv/azure-retail-etl" target="_blank" class="gh_link" style="color:#0078d4;"><i class="fa fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_card" style="border-top-color:#0078d4;">
+                            <div class="proj_type" style="color:#0078d4;">☁️ Big Data · Medallion Architecture</div>
+                            <h4>Azure Population Pipeline</h4>
+                            <p>Scalable Medallion Architecture pipeline processing Top 100 World's Largest Cities dataset across Bronze, Silver, and Gold layers.</p>
+                            <ul>
+                                <li>Bronze: Raw CSV ingested into Azure Data Lake Storage (ADLS Gen2)</li>
+                                <li>Silver: Cleaned &amp; transformed using PySpark in Azure Databricks notebooks</li>
+                                <li>Gold: Aggregated to Top 10 most populated cities — analytics-ready output</li>
+                            </ul>
+                            <div style="margin-top:14px;"><span class="skill_badge">Azure Databricks</span><span class="skill_badge">PySpark</span><span class="skill_badge">ADLS Gen2</span><span class="skill_badge">Jupyter</span></div>
+                            <a href="https://github.com/PanchamiShiv/azure-population-pipeline" target="_blank" class="gh_link" style="color:#0078d4;"><i class="fa fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================Contact =================-->
+        <section class="p_120" id="contact">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Get In Touch</h2>
+                    <p>Open to software engineering &amp; AI/ML roles. Feel free to reach out!</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="contact_info_item"><i class="fa fa-phone"></i><span>+49 176 200 89 156</span></div>
+                        <div class="contact_info_item"><i class="fa fa-envelope"></i><span><a href="mailto:panchshiv1910@gmail.com" style="color:#444;">panchshiv1910@gmail.com</a></span></div>
+                        <div class="contact_info_item"><i class="fa fa-linkedin"></i><span><a href="https://linkedin.com/in/panchami-shiv" target="_blank" style="color:#444;">linkedin.com/in/panchami-shiv</a></span></div>
+                        <div class="contact_info_item"><i class="fa fa-github"></i><span><a href="https://github.com/PanchamiShiv" target="_blank" style="color:#444;">github.com/PanchamiShiv</a></span></div>
+                        <div class="contact_info_item"><i class="fa fa-map-marker"></i><span>Berlin, Germany</span></div>
+                        <div style="margin-top:28px;">
+                            <a href="mailto:panchshiv1910@gmail.com" class="main_btn" style="margin-right:12px;">Email Me</a>
+                            <a href="https://linkedin.com/in/panchami-shiv" target="_blank" class="main_btn" style="background:#0077b5;border-color:#0077b5;">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================Footer =================-->
+        <footer class="footer_area p_120">
+            <div class="container">
+                <div class="row footer_inner">
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title"><h3>Panchami Satheesan</h3></div>
+                            <p>M.Sc. Applied Computer Science student specializing in AI systems, LLM pipelines, and cloud data engineering. Based in Berlin, Germany.</p>
+                            <p style="margin-top:10px;font-size:13px;color:#aaa;">© <script>document.write(new Date().getFullYear());</script> Panchami Satheesan</p>
+                        </aside>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title"><h3>Quick Links</h3></div>
+                            <ul style="list-style:none;padding:0;">
+                                <li style="margin-bottom:8px;"><a href="#about" style="color:#aaa;text-decoration:none;">→ About Me</a></li>
+                                <li style="margin-bottom:8px;"><a href="#projects" style="color:#aaa;text-decoration:none;">→ Projects</a></li>
+                                <li style="margin-bottom:8px;"><a href="#experience" style="color:#aaa;text-decoration:none;">→ Experience &amp; Education</a></li>
+                                <li style="margin-bottom:8px;"><a href="#contact" style="color:#aaa;text-decoration:none;">→ Contact</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2">
+                        <aside class="f_widget social_widget">
+                            <div class="f_title"><h3>Follow Me</h3></div>
+                            <p>Let's connect!</p>
+                            <ul class="list">
+                                <li><a href="https://linkedin.com/in/panchami-shiv" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/PanchamiShiv" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li><a href="mailto:panchshiv1910@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
